@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import Image from 'next/image'
 import facebook from '../../assets/icons/facebook.svg'
 import instagram from '../../assets/icons/instgram.svg'
 import twitter from '../../assets/icons/twiter.svg'
@@ -17,37 +18,88 @@ const index = () => {
             Follow us on
           </h3>
           <div className='flex gap-x-2 mt-[7px]'>
-            <img src={facebook.src} alt='facebook img' />
-            <img src={instagram.src} alt='instagram img' />
-            <img src={twitter.src} alt='twitter img' />
-            <img src={youtobe.src} alt='you tobe img' />
+            <Image src={facebook} alt='facebook img' />
+            <Image src={instagram} alt='instagram img' />
+            <Image src={twitter} alt='twitter img' />
+            <Image src={youtobe} alt='youtobe img' />
           </div>
         </div>
       </div>
       <div className=' w-[250px]'>
         <select className="mt-[22px] w-[305px] text-[20px] font-medium font-['Netflix Sans'] text-[#fff]  focus:border-blue-600 bg-transparent border-none ">
           <option>About us</option>
-          <option className=' text-[13px] text-black' value='Freemium'>Freemium</option>
-          <option className=' text-[13px] text-black' value='Free'>Free</option>
-          <option className=' text-[13px] text-black' value='Paid'>Paid</option>
+          <option className=' text-[13px] text-black' value='Freemium'>
+            Freemium
+          </option>
+          <option className=' text-[13px] text-black' value='Free'>
+            Free
+          </option>
+          <option className=' text-[13px] text-black' value='Paid'>
+            Paid
+          </option>
         </select>
         <select className=" mt-[12px] w-[305px] text-[20px] font-medium font-['Netflix Sans'] text-[#fff]  focus:border-blue-600 bg-transparent border-none ">
           <option>Contact</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Freemium'>Freemium</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Free'>Free</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Paid'>Paid</option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Freemium'
+          >
+            Freemium
+          </option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Free'
+          >
+            Free
+          </option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Paid'
+          >
+            Paid
+          </option>
         </select>
         <select className=" mt-[12px] w-[305px] text-[20px] font-medium font-['Netflix Sans'] text-[#fff]  focus:border-blue-600 bg-transparent border-none ">
           <option>Prefences</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Freemium'>Freemium</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Free'>Free</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Paid'>Paid</option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Freemium'
+          >
+            Freemium
+          </option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Free'
+          >
+            Free
+          </option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Paid'
+          >
+            Paid
+          </option>
         </select>
         <select className=" mt-[12px] w-[305px] text-[20px] font-medium font-['Netflix Sans'] text-[#fff]  focus:border-blue-600 bg-transparent border-none ">
           <option> Top Destinations</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Freemium'>Freemium</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Free'>Free</option>
-          <option className="text-[13px] text-black font-['Netflix Sans']" value='Paid'>Paid</option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Freemium'
+          >
+            Freemium
+          </option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Free'
+          >
+            Free
+          </option>
+          <option
+            className="text-[13px] text-black font-['Netflix Sans']"
+            value='Paid'
+          >
+            Paid
+          </option>
         </select>
       </div>
     </section>

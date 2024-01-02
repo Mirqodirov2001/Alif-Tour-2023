@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import india from '../../assets/images/india.png'
 import talk from '../../assets/images/talk.png'
 import beach from '../../assets/images/beach.png'
@@ -12,7 +13,7 @@ const index = () => {
           </h1>
           <div className=' card1 items-center'>
             <div className='card3 p-3 border'>
-              <img className=' img11' src={india.src} alt='india  img' />
+              <Image className=' img11' src={india} alt='india img' />
               <h1 className="text-[24px] font-normal text-[#000] font-['Netflix Sans'] mt-[24px]">
                 India
               </h1>
@@ -24,8 +25,7 @@ const index = () => {
               </p>
             </div>
             <div className='card3 p-3 border'>
-              <img className=' img11' src={talk.src} alt='talk  img' />
-
+              <Image className=' img11' src={talk} alt='talk img' />
               <h1 className="text-[24px] font-normal text-[#000] font-['Netflix Sans'] mt-[24px]">
                 Travel Talk
               </h1>
@@ -37,8 +37,7 @@ const index = () => {
               </p>
             </div>
             <div className='card3 p-3 border'>
-              <img className=' img11' src={beach.src} alt='beach img' />
-
+              <Image className=' img11' src={beach} alt='beach img' />
               <h1 className="text-[24px] font-normal text-[#000] font-['Netflix Sans'] mt-[24px]">
                 Beach
               </h1>
@@ -51,8 +50,7 @@ const index = () => {
             </div>
 
             <div className='card3 p-3 border'>
-              <img className=' img11' src={india.src} alt='india  img' />
-
+              <Image className=' img11' src={india} alt='india img' />
               <h1 className="text-[24px] font-normal text-[#000] font-['Netflix Sans'] mt-[24px]">
                 Beach
               </h1>

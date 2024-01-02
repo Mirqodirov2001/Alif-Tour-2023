@@ -1,4 +1,5 @@
 import './style.scss'
+import Image from 'next/image'
 import Link from 'next/link'
 import hotels from '../../assets/icons/image 17.svg'
 import tours from '../../assets/icons/image-5.svg'
@@ -14,25 +15,21 @@ const index = () => {
             <div className='items-center'>
               <div className='gap flex items-center justify-center mt-1 gap-10'>
                 <div>
-                  <img
-                    className=' ml-2 mb-1'
-                    src={hotels.src}
-                    alt='hotels img'
-                  />
+                  <Image className=' ml-2 mb-1' src={hotels} alt='hotels img' />
                   <p className="text text-[#888888] opacity-100 text-[18px] text-['Helvetica'] font-normal">
                     <Link href='/hotels'>Hotels</Link>
                   </p>
                 </div>
                 <div>
-                  <img className=' ml-2 mb-1' src={tours.src} alt='tours img' />
+                  <Image className=' ml-2 mb-1' src={tours} alt='tours img' />
                   <p className="text text-[#888888] opacity-100 text-[18px] text-['Helvetica'] font-normal">
                     <Link href='/tours'>Tours</Link>
                   </p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     className='img ml-2 mb-1'
-                    src={flights.src}
+                    src={flights}
                     alt='flights img'
                   />
                   <p className="text text-[#888888] text-[18px] text-['Helvetica'] font-normal">

@@ -1,14 +1,19 @@
 import React from 'react'
+import Image from 'next/image'
 import google from '../../assets/images/image 44.png'
 import store from '../../assets/images/image 45.png'
 import './style.scss'
 const index = () => {
   return (
     <section id='travel-2'>
-      <h1 className=" text-[25px] font-bold text-['Helvetica'] text-[#fff] mt-4">Your all-in-one travel app.</h1>
+      <h1 className=" text-[25px] font-bold text-['Helvetica'] text-[#fff] mt-4">
+        Your all-in-one travel app.
+      </h1>
       <p className="text-[10px] font-normal text-['Helvetica'] text-[#fff] mt-2">
-        Book flights, hotels, trains & rental cars anywhere in the world in just <br />
-        seconds. Get real-time flight updates, travel info, exclusive deals, and <br />
+        Book flights, hotels, trains & rental cars anywhere in the world in just{' '}
+        <br />
+        seconds. Get real-time flight updates, travel info, exclusive deals, and{' '}
+        <br />
         30% more Trip Coins only on the app!
       </p>
       <div className=' flex items-center gap-[30px] mt-3'>
@@ -45,8 +50,8 @@ const index = () => {
         <span className='span1 bg-[#b5b3b3] ml-2'></span>
       </dir>
       <div className='flex mt-[12px] gap-4'>
-        <img className='w-[150px]' src={google.src} alt='google img' />
-        <img className='w-[150px]' src={store.src} alt='store img' />
+        <Image className='w-[150px]' src={google} alt='google img' />
+        <Image className='w-[150px]' src={store} alt='store img' />
       </div>
     </section>
   )

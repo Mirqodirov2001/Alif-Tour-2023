@@ -1,8 +1,9 @@
 import React from 'react'
+import Image from 'next/image'
 import phone from '../../assets/images/Rectangle.png'
 import google from '../../assets/images/google.png'
 import store from '../../assets/images/store.png'
-import TravelAppMobil from "@/components/TravelAppMobil"
+import TravelAppMobil from '@/components/TravelAppMobil'
 
 import './style.scss'
 const index = () => {
@@ -10,8 +11,7 @@ const index = () => {
     <section className=' mt-32' id='app'>
       <div className='container mx-auto p-3'>
         <div className=' img flex'>
-          <img className=' m1 pt-[54px]' src={phone.src} alt='phone img' />
-
+          <Image className=' m1 pt-[54px]' src={phone} alt='phone img' />
           <div className='info ml-[80px]'>
             <div className=' mt-[60px] '>
               <h1 className="text-[48px] font-bold font-['Helvetica'] text-[#fff]">
@@ -19,8 +19,8 @@ const index = () => {
               </h1>
               <p className='text-[24px] font-normal text-[#fff] mt-[10px]'>
                 Book flights, hotels, trains & rental cars anywhere in the world
-                in just seconds. Get real-time flight updates, travel info,exclusivedeals, and 
-                30% more Trip Coins only on the app!
+                in just seconds. Get real-time flight updates, travel
+                info,exclusivedeals, and 30% more Trip Coins only on the app!
               </p>
             </div>
             <div className='gmail flex mt-[32px] justify-between'>
@@ -62,13 +62,13 @@ const index = () => {
                 <span className=' w-[1px] h-[51px] bg-[#b5b3b3] flex ml-2 mt-[10px]'></span>
               </div>
               <span className='btn'>
-                <img className=' mb-[27px]' src={store.src} alt='google img' />
-                <img src={google.src} alt='store img' />
+                <Image className=' mb-[27px]' src={store} alt='store img' />
+                <Image src={google} alt='google img' />
               </span>
             </div>
           </div>
         </div>
-        <TravelAppMobil/>
+        <TravelAppMobil />
       </div>
     </section>
   )

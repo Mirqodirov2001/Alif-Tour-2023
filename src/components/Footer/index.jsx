@@ -3,13 +3,14 @@ import facebook from '../../assets/icons/facebook (1).svg'
 import instagram from '../../assets/icons/Instagram.svg'
 import twitter from '../../assets/icons/Twitter.svg'
 import you from '../../assets/icons/You Tobu.svg'
-import FooterMobile from "@/components/FooterMobile"
+import FooterMobile from '@/components/FooterMobile'
+import Image from 'next/image'
 
 const index = () => {
   return (
     <footer id='footer'>
       <div className='container mx-auto p-3'>
-        <FooterMobile/>
+        <FooterMobile />
         <div className=' footer1'>
           <h1 className="text-[32px] font-bold font-['Helvetica'] text-[#fff] pt-[42px]">
             Trxvl.
@@ -73,10 +74,10 @@ const index = () => {
                 Autumnal Bulgier
               </p>
               <div className=' flex gap-x-[20px] -ml-10 pt-[62px]'>
-                <img src={facebook.src} alt='facebook img' />
-                <img src={instagram.src} alt='instagram img' />
-                <img src={twitter.src} alt='twitter img' />
-                <img src={you.src} alt='you img' />
+                <Image src={facebook} alt='facebook img' />
+                <Image src={instagram} alt='instagram img' />
+                <Image src={twitter} alt='twitter img' />
+                <Image src={you} alt='youtobe img' />
               </div>
             </div>
           </div>

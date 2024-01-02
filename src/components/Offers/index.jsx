@@ -1,4 +1,5 @@
 import './style.scss'
+import Image from 'next/image'
 import plane from '../../assets/images/plane.png'
 import house from '../../assets/images/house.png'
 
@@ -10,9 +11,9 @@ const index = () => {
           <h1 className=' text-[32px] text-[#000] font-bold'>Offers</h1>
           <div className=' offers-card'>
             <div className='cards flex border'>
-              <img
+              <Image
                 className=' img01 ml-4 rounded-2xl'
-                src={plane.src}
+                src={plane}
                 alt='plane img'
               />
               <div className=' mt ml-[24px]'>
@@ -31,9 +32,9 @@ const index = () => {
               </div>
             </div>
             <div className='cards flex border'>
-              <img
+              <Image
                 className=' img01 ml-4 rounded-2xl'
-                src={house.src}
+                src={house}
                 alt='house img'
               />
               <div className=' mt ml-[24px]'>
@@ -54,9 +55,9 @@ const index = () => {
             </div>
 
             <div className='cards flex border'>
-              <img
+              <Image
                 className=' img01 ml-4 rounded-2xl'
-                src={house.src}
+                src={house}
                 alt='house img'
               />
               <div className=' mt ml-[24px]'>
@@ -76,9 +77,9 @@ const index = () => {
               </div>
             </div>
             <div className='cards flex border'>
-              <img
+              <Image
                 className=' img01 ml-4 rounded-2xl'
-                src={house.src}
+                src={house}
                 alt='house img'
               />
               <div className=' mt ml-[24px]'>
@@ -98,9 +99,9 @@ const index = () => {
               </div>
             </div>
             <div className='cards flex border'>
-              <img
+              <Image
                 className=' img01 ml-4 rounded-2xl'
-                src={house.src}
+                src={house}
                 alt='house img'
               />
               <div className=' mt ml-[24px]'>

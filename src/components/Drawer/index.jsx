@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 import Drawer from 'react-modern-drawer'
 import menu from '../../assets/icons/meu.svg'
 import 'react-modern-drawer/dist/index.css'
@@ -22,7 +23,7 @@ const App = () => {
           >
             <option value='1'>English</option>
             <option value='2'>Russia</option>
-            <option value='3'>O'zbekcha</option>
+            <option value='3'>Uzbek</option>
           </select>
         </div>
         <div>
@@ -32,7 +33,7 @@ const App = () => {
         </div>
         <div>
           <span onClick={toggleDrawer}>
-            <img className='cursor-pointer' src={menu.src} alt='menu img' />
+            <Image src={menu} alt='menu img' />
           </span>
           <Drawer
             open={isOpen}

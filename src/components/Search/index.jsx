@@ -1,4 +1,5 @@
 import './style.scss'
+import Image from 'next/image'
 import img1 from '../../assets/icons/1.svg'
 import user from '../../assets/icons/people.svg'
 import SearchMobile from '@/components/UI/Search'
@@ -24,19 +25,19 @@ const index = () => {
                   <div>
                     <ul className=' srm flex items-center ml-[190px] gap-12'>
                       <li className=' flex gap-1 cursor-pointer '>
-                        <img src={img1.src} alt='img' />
+                        <Image src={img1} alt='img' />
                         <p className="text-[16px] font-['Helvetica'] font-normal text-[#fff] opacity-70 hover:text-[#625deb]">
                           Check in
                         </p>
                       </li>
                       <li className='flex gap-1'>
-                        <img src={img1.src} alt='img' />
+                        <Image src={img1} alt='img' />
                         <p className="text-[16px] font-['Helvetica'] font-normal text-[#fff] opacity-70  cursor-pointer hover:text-[#625deb]">
                           Check out
                         </p>
                       </li>
                       <li className='flex gap-1'>
-                        <img className=' -mt-1' src={user.src} alt='user img' />
+                        <Image className=' -mt-1' src={user} alt='user img' />
                         <p className="text-[16px] font-['Helvetica'] font-normal text-[#fff] opacity-70 cursor-pointer hover:text-[#625deb]">
                           1 room, 2 adults
                         </p>
